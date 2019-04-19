@@ -14,6 +14,9 @@
 		height: 300px !important;
 		width: 100% !important;
 	}
+	.gallery-btn{
+		margin-left: 7rem;
+	}
 	.hospital1{
 		height: 500px;
 	}
