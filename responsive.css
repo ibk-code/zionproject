@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+	.watchword{
+	    /* display:none !important; */
+	}
+	.bg-nav{
+		background-color: #343a40!important;
+	}
+	.video video{
+	 	height: 300px;
+	 	width: 100%;
+	 	margin-left: 0;
+	}
+	.service-img{
+		height: 300px !important;
+		width: 100% !important;
+	}
+	.hospital1{
+		height: 500px;
+	}
+	.hospital-img{
+		height: 500px !important;
+		width: 100% !important;
+	}
+	.hospital h4{
+		padding-top: 0;
+	}
+}
+@media (width: 1024px){
+	.service-img{
+		height: 300px !important;
+		width: 100% !important;
+	}
+}
