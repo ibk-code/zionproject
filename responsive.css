@@ -1,18 +1,56 @@
-@media (max-width: 768px) {
+@media (max-width: 700px) {
+	html body {
+		font-size: 50%;
+	}
 	.watchword{
 	    /* display:none !important; */
+	}
+	.mobile-text{
+		display: block;
+	}
+	.mobile-text h1{
+		color: white;
+    	padding-top: 55px;
+    	font-size: 24px;
+	}
+	.mobile-text p{
+		color: white;
+    	font-size: 14px;
 	}
 	.bg-nav{
 		background-color: #343a40!important;
 	}
-	.video video{
+	#header-bg{
+		background-image: url('https://media.pri.org/s3fs-public/styles/story_main/public/photos/2013-April/20130409-brazil-church-01.jpg?itok=1UNofYq8');
+		width: 100%;
+		height: 450px;
+		max-width: 100%;
+	}
+	.carousel img {
+		object-fit: cover;
+		/* height: 600px; */
+		height: 450px;
+		width: 100%;
+		max-width: 100%;
+		/* background-size: contain; */
+		display: none;
+	}
+
+	.carousel{
+		top: 0;
+		z-index: -1;
+		display: none;
+	}
+	.videos video{
 	 	height: 300px;
+	 	margin-top: -41px;
 	 	width: 100%;
 	 	margin-left: 0;
 	}
 	.service-img{
 		height: 300px !important;
 		width: 100% !important;
+		display: none;
 	}
 	.gallery-btn{
 		margin-left: 7rem;
@@ -26,6 +64,9 @@
 	}
 	.hospital h4{
 		padding-top: 0;
+	}
+	.service-bg-2{
+		display: none;
 	}
 }
 @media (width: 1024px){

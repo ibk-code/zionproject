@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html,body{
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .watchword{
-	background-image: radial-gradient( circle 999px at 0.2% 50%,  rgba(128,14,168,1) 0%, rgba(195,61,230,1) 52.2%, rgba(214,132,247,1) 88.7% );
+	background-image: linear-gradient(to top, #3cba92 100%, #3cba92 0%);
 	color: #ffffff;
+}
+.mobile-text{
+	display: none;
 }
 .carousel-item:after {
   content:"";
@@ -30,17 +33,46 @@ nav{
 	bottom: 0 !important;
 	top: 170px !important;
 }
+.carousel-indicators li{
+	background-color: #3cba92 !important;
+}
 .service{
 	margin-top: -99px;
+	background-color: #3cba92;
+	background-image: linear-gradient(320deg, #3cba92  51%, #ffffff 24%);
+	overflow-x: hidden;
+	/* min-height: 400px; */
+}
+.service-bg-2{
+	/* background-color: #3cba92;
+	background-image: linear-gradient(320deg, #3cba92 29%, #ffffff 24%);
+	min-height: 200px; */
+	/*  width: 0; height: 0; 
+	 border-left: 50px solid transparent; 
+	 border-right: 50px solid transparent; 
+	 border-top: 100px solid red; */
+	   width: 0; height: 0; 
+	   border-top: 100px solid #28ad83; 
+	   border-right: 100px solid transparent;
+	   margin-left: 27rem;
 }
 .service-1{
-	background-color: #dddddd;
+	margin-left: 20px !important;
+}
+.service-1 h2{
+	padding-top: 0;
+    margin-top: 34px;
+    padding-bottom: 15px;
 }
 .service-img{
-	height: 300px !important;
-	width: 100% !important;
+	height: 249px !important;
+    /* width: 100% !important; */
+    position: absolute;
+    width: 500px;
+    top: 54px;
+    right: 103px;
 }
-.hospital1{
+/* .hospital1{
 	background-image: linear-gradient(#404040d6,#404040d6),url('http://bestnetblog.files.wordpress.com/2012/08/net-sale-in-butagaya-with-volunteer-kats-help1.jpg');
 	height: 421px;
 	background-position: 0-300px;
@@ -56,33 +88,39 @@ nav{
 }
 .hospital p{
 	color: #ffffff;
-}
-.service-1 ul{
+} */
+/* .service-1 ul{
 	margin-left: 40px;
     margin-top: 20px;
 }
 .service-1 ul li a{
 	color: #ffffff !important;
-}
+} */
 .service-1 p{
-	color: #ffffff;
+	/* color: #ffffff; */
 }
-.nav-pills .nav-link.active{
+/* .nav-pills .nav-link.active{
 	background:radial-gradient( circle 999px at 0.2% 50%,  rgba(128,14,168,1) 0%, rgba(195,61,230,1) 52.2%, rgba(214,132,247,1) 88.7% ) !important;
-}
+} */
 .service-btn{
-	background: radial-gradient( circle 999px at 0.2% 50%,  rgba(128,14,168,1) 0%, rgba(195,61,230,1) 52.2%, rgba(214,132,247,1) 88.7% ) ;
-	border: none;
-	margin-left: 50px;
+	background:transparent;
+	border: 2px solid #3cba92 ;
+	/* margin-left: 50px; */
 	padding-top: 7px;
-    color: #ffffff;
+    color: #3cba92;
+    margin-top: 15px;
     padding-left: 15px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding-bottom: 8px;
     padding-right: 15px;
 }
+.service-btn:hover{
+	background-color: #3cba92;
+	border: none;
+	color: #ffffff;
+}
 .donate-btn{
-	background: radial-gradient( circle 999px at 0.2% 50%,  rgba(128,14,168,1) 0%, rgba(195,61,230,1) 52.2%, rgba(214,132,247,1) 88.7% ) ;
+	background: #3cba92 ;
 	border: none;
 	/* margin-left: 50px; */
 	padding-top: 7px;
@@ -92,29 +130,36 @@ nav{
     padding-bottom: 8px;
     padding-right: 15px;
 }	
-.tab-pane p{
+/* .tab-pane p{
 	color: #ffffff;
+} */
+.videos video{
+	/* margin-left: 182px; */
 }
-.video video{
-	margin-left: 182px;
+.videos{
+	/* margin-top: 80px; */
+	/* background-color: #000000; */
+	/* height: 500px; */
+	background-color: #e10d0d7a;
+    margin-top: 65px;
 }
-.video{
-	margin-top: 80px;
+.videos h2, .videos p{
+	color: #ffffff !important;
 }
 .gallery{
-	margin-top: 100px;
+	margin-top: 34rem;
 }
 .gallery .row{
-	margin-top: 20px;
+	margin-top: 30px;
 }
-.image{
+.imag{
 	box-sizing: border-box;
 	position: relative;
 	display: inline-block;
 	max-width: 100%;
 	height: auto;
 }
-.image .image-layer_top{
+.imag .image-layer_top{
 	opacity: 0;
 	position: absolute;
 	top: 0;
@@ -123,16 +168,16 @@ nav{
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(104, 52, 116, 0.78);
+	background-color: #3cc297b3;
 	color: #fff;
 	padding: 15px;
 	transition: all 0.4s ease-in-out 0s;
 }
-.image:hover .image-layer_top{
+.imag:hover .image-layer_top{
 	opacity: 1;
 	transition: 1s ease-in-out;
 }
-.image .image-text{
+.imag .image-text{
 	text-align:center;
 	font-size: 32px;
 	display: inline-block;
@@ -142,7 +187,7 @@ nav{
 	transform: translate(-50%, -50%);
 }
 .gallery-btn{
-	background: radial-gradient( circle 999px at 0.2% 50%,  rgba(128,14,168,1) 0%, rgba(195,61,230,1) 52.2%, rgba(214,132,247,1) 88.7% ) ;
+	background: #3cba92 ;
 	border: none;
 	/* margin-left: 50px; */
 	padding-top: 7px;
@@ -155,12 +200,73 @@ nav{
     padding-bottom: 8px;
     padding-right: 15px;
 }
+.cen{
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hospital{
+	position: absolute;
+	top: 250%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 400px;
+	width: 100%;
+	background: #3cba92;
+	margin-top: 80px;
+	/* box-shadow: 0 25px 30px rgba(0, 0, 0, .5); */
+	display:flex;
+}
+.content{
+	width: calc(50% + 50px);
+	height: 100%;
+	/* background: #3cba92; */
+	/* background-image: linear-gradient(#404040d6,#404040d6),url('http://america.aljazeera.com/content/ajam/articles/2013/7/26/photos-the-pope-visitsafavelaconductsmassatcopacaban/_jcr_content/mainpar/imageslideshow/slideShowImages/slide1/image.adapt.960.high.pope_brazil_day3_01a.jpg'); */
+	box-sizing: border-box;
+	background:url('http://bestnetblog.files.wordpress.com/2012/08/net-sale-in-butagaya-with-volunteer-kats-help1.jpg');
+	border-right: 100px solid #3cba92;
+	border-bottom: 400px solid transparent;
+	background-position: left;
+}
+.content h3{
+	color: #fff;
+	margin-top: 150px;
+	font-weight: 600;
+}
+.content:after{
+	/*  display: block;
+	  position: relative;
+	  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+	  margin-top: -150px;
+	  height: 150px;
+	  width: 100%;
+	  content: ''; */
+}
+.image{
+	width: calc(50% - 50px);
+	height: 100%;
+	background: #3cba92;
+	box-sizing: border-box;
 
+}
+.image h2{
+	color: white;
+	margin-top: 35px;
+	padding-bottom: 13px;
+	font-weight: 600;
+}
+.image h4{
+	color: #ffffff;
+	font-weight: 600; 
+}
+.image p{
+	color: #ffffff;
+}
 /* @media (max-width: 768px){ */
+	/* nav{ */
 	/* .carousel{
 		top: -311px;
 	} */
-	/* nav{ */
 		/* background-color: black; */
 	/* } */
 	/* #carousel{ */
